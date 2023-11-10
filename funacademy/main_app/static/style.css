@@ -3,10 +3,18 @@
 }
 
 .menuul{
-    margin-left:-65%;
+    margin-left:-135%;
 }
 
-body{
-    background-color: #008080;
-    color:white;
+.navbar{
+    color:white !important;
+    background-color: #008080 !important;
+}
+
+.nav-link{
+    color:white !important;
+}
+
+.navbar-brand{
+    color:white !important;
 }
