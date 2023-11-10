@@ -18,9 +18,11 @@ from django.contrib import admin
 from django.urls import path,include
 from main_app import urls as main_app_urls
 
-
-
+# whenever you create a new app you should include its urls here
+# include('<appname>.urls')
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('main_app.urls')),
 ]
+
+
