@@ -1,13 +1,14 @@
 import os
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-# meow
 SECRET_KEY = 'your-secret-key'
 
 DEBUG = True
 
 ALLOWED_HOSTS = []
 
+
+# you need to include each new app in the installed apps
 INSTALLED_APPS = [
     'main_app',
     'django.contrib.admin',
@@ -48,6 +49,7 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'funacademy.wsgi.application'
 
+# change the engine end to .postgresql and name with name of the database you created
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
@@ -80,4 +82,8 @@ USE_L10N = True
 
 USE_TZ = True
 
+
 STATIC_URL = '/static/'
+
+# AUTH_USER_MODEL = 'main_app.User'
+
