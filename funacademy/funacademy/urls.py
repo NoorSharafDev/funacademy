@@ -21,9 +21,11 @@ from main_app import urls as main_app_urls
 # whenever you create a new app you should include its urls here
 # include('<appname>.urls')
 # you will always need admin path with admin.site.urls
+# whenever you wanna use login built in functionality include django.contrib.auth.urls
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('main_app.urls')),
+    path('accounts/',include('django.contrib.auth.urls'))
 ]
 
 

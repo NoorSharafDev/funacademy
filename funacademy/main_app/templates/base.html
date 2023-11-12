@@ -26,18 +26,21 @@
               <li class="nav-item">
                 <a class="nav-link" href="#">Link</a>
               </li>
-          
+             
             </ul>
             <form class="d-flex" role="search">
                 <li class="nav-item dropdown rightbutton">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Profile
+                      {{ user.username }}
+
                     </a>
+                  
                     <ul class="dropdown-menu menuul">
                       <li><a class="dropdown-item" href="#">View</a></li>
                       <li><hr class="dropdown-divider"></li>
                       <li><a class="dropdown-item" href="#">Logout</a></li>
                     </ul>
+
                   </li>
             </form>
           </div>
